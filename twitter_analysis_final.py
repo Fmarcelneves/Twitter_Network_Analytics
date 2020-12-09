@@ -13,15 +13,15 @@ Original file is located at
 # %%capture
 # %matplotlib inline
 # #data manipulation
-# import pandas as pd
-# import numpy as np
-# import collections
-# import regex as re 
-# import random
+ import pandas as pd
+ import numpy as np
+ import collections
+ import regex as re 
+ import random
 # #data wordcloud
-# from textblob import TextBlob
-# from textblob import Word
-# from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
+ from textblob import TextBlob
+ from textblob import Word
+ from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 # #import visualization
 # import matplotlib.pyplot as plt
 # import io
@@ -40,39 +40,39 @@ Original file is located at
 # Commented out IPython magic to ensure Python compatibility.
 # %%capture
 # !pip install plotly --upgrade
-# from plotly import __version__
+from plotly import __version__
 # print (__version__)
-# import plotly.express as px
-# from plotly.subplots import make_subplots
-# import plotly.graph_objs as go
-# import plotly as py
+import plotly.express as px
+from plotly.subplots import make_subplots
+import plotly.graph_objs as go
+import plotly as py
 # #import plotly.figure_factory as ff
-# from plotly import tools
+from plotly import tools
 # #import cufflinks as cf
-# from plotly.offline import iplot, init_notebook_mode
+from plotly.offline import iplot, init_notebook_mode
 # # Display all cell outputs
-# from IPython.core.interactiveshell import InteractiveShell
+from IPython.core.interactiveshell import InteractiveShell
 
 nltk.download('stopwords')
- nltk.download('rslp')
+nltk.download('rslp')
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%capture
-# import plotly.io as pio
-# pio.templates.default = "plotly_white"
-# #pio.renderers.default = 'colab'
+import plotly.io as pio
+pio.templates.default = "plotly_white"
+pio.renderers.default = 'colab'
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%capture
 # !pip install dash
-# import dash
+import dash
 # !pip install jupyter-dash
-# from jupyter_dash import JupyterDash
+from jupyter_dash import JupyterDash
 # !pip install dash_bootstrap_components
-# import dash_bootstrap_components as dbc
-# import dash_core_components as dcc
-# import dash_html_components as html
-# from dash.dependencies import Input, Output, State
+import dash_bootstrap_components as dbc
+import dash_core_components as dcc
+import dash_html_components as html
+from dash.dependencies import Input, Output, State
 
 """## Loading Dataset"""
 
@@ -98,47 +98,47 @@ twitter_dt_dummy = twitter_dt_dummy[['Retweets', 'Curtidas', 'Usuário_verificad
 pd.options.plotting.backend = "plotly"
 
 fig1 = twitter_dt_dummy['Retweets'].value_counts().plot.bar(color = ['Ausente', 'Presente'], title = "Retweets", labels={"value": "Frequências", "index": "", 'color': ''})
-fig1.show()
+#fig1.show()
 
 fig2 = twitter_dt_dummy['Curtidas'].value_counts().reindex(["Ausente", "Presente"]).plot.bar(color = ['Ausente', 'Presente'], title = "Curtidas no tweet", 
       labels={"value": "Frequências", "index": "", 'color': ''})
-fig2.show()
+#fig2.show()
 
 fig3 = twitter_dt['Mídia'].value_counts().plot.bar(color = ['Ausente', 'Presente'],  title = "Mídia", 
-                                                   labels={"value": "Frequências", "index": "", 'color': ''})
-fig3.show()
+                                                   labels={"value": "Frequências", "index": "", 'color': ''})#
+#fig3.show()
 
 index_names= twitter_dt[ (twitter_dt['Retweets'] <= 10)].index
 twitter_dt_rt = twitter_dt.drop(index_names) 
 fig4 = twitter_dt_rt['Retweets'].plot.hist(title = "Frequência de retweets", bins= 80, 
                                            labels={"count": "Frequências", "value": "Retweets", 'variable': ''})
-fig4.show()
+#fig4.show()
 
 index_names= twitter_dt[(twitter_dt['Curtidas'] <= 10)].index
 twitter_dt_ct = twitter_dt.drop(index_names) 
 fig5 = twitter_dt_ct['Curtidas'].plot.hist(title = "Frequência de curtidas", bins = 80,
 labels={"count": "Frequências", "value": "Curtidas", "variable": ""})
-fig5
+#fig5
 
 index_names= twitter_dt[ (twitter_dt['Seguidores'] <= 30)].index
 twitter_dt_sg = twitter_dt.drop(index_names) 
 fig6 = twitter_dt_sg['Seguidores'].plot.hist(title = "Frequência de seguidores", bins = 100000, 
 labels={"count": "Frequências", "value": "Seguidores", "variable":""})
-fig6.show()
+#fig6.show()
 
 fig7 = px.scatter(twitter_dt, x="Retweets", color="Usuário_verificado", marginal_x ="box", facet_col="Mídia", title = "Número de retweets na presença e ausência de mídia", 
 labels={"index": "Frequências", "Usuário_verificado": "Usuário verificado"})
-fig7.show()
+#fig7.show()
 
 twitter_dt_tempo = twitter_dt.groupby([twitter_dt['Tempo'].astype('datetime64[ns]').dt.to_period('1d')]).count()
 fig8=px.bar(twitter_dt_tempo, x=twitter_dt_tempo.index.astype(str) , y="Id", labels={"Id": "Frequências", "x": "Tempo"},
        title="Frequências dos tweets ao longo do tempo", color = twitter_dt_tempo['Id'])
-fig8.show()
+#fig8.show()
 
 correlation = twitter_dt[["Seguidores", "Retweets", "Curtidas"]].corr()
 fig9 = px.imshow(correlation, labels=dict(color="Correlação"), title="Correlação entre as variáveis numéricas")
 #fig.update_layout(width=800, height=800)
-fig9.show()
+#fig9.show()
 
 net1 = pd.DataFrame(twitter_dt['Nome_do_usuário'])
 net2 = pd.DataFrame(twitter_dt['Hashtags'].str.split().values.tolist())
@@ -160,11 +160,11 @@ net_all = net_all.groupby(["Nome_do_usuário", "value"])["count"].count().reset_
 
 pd.options.plotting.backend = "plotly"
 
-net_all_word
+#net_all_word
 
 fig10 = twitter_dt["Nome_do_usuário"].value_counts().nlargest(10).plot(kind='barh',title="Contas do twitter mais ativas", 
 labels={"value": "Frequências", "index": "Contas do Twitter", 'color': 'Frequência'}, color = twitter_dt["Nome_do_usuário"].value_counts().nlargest(10))
-fig10.update_layout(showlegend=False)
+#fig10.update_layout(showlegend=False)
 
 followers = twitter_dt.sort_values(by = "Seguidores", ascending = False)
 user_most_followers = twitter_dt.groupby("Nome_do_usuário").max().sort_values(by = "Seguidores", ascending = False)
@@ -172,7 +172,7 @@ user_most_followers["Nome_do_usuário"] = user_most_followers.index
 user_most_followers.reset_index(inplace = True, drop = True)
 fig11=px.bar(user_most_followers[:10], x = "Nome_do_usuário", y = "Seguidores", color = "Usuário_verificado", title="Usuários com maior número de seguidores", 
              labels={"Seguidores": "Seguidores", "Nome_do_usuário": "Usuários", 'Usuário_verificado': 'Usuário verificado'})
-fig11.show()
+#fig11.show()
 
 retweeted = twitter_dt.sort_values(by = "Retweets", ascending = False)
 user_most_retweeted = twitter_dt.groupby("Nome_do_usuário").max().sort_values(by = "Retweets", ascending = False)
@@ -181,11 +181,9 @@ user_most_retweeted.reset_index(inplace = True, drop = True)
 fig12 = px.bar(user_most_retweeted[:10], x = 'Nome_do_usuário', y = "Retweets", color = "Usuário_verificado", title="Usuários com maior número de retweets", 
                labels={"Nome_do_usuário": "Nome do usuário", 'Usuário_verificado': 'Usuário verificado'})
 fig12.update_layout(xaxis_categoryorder = 'total descending')
-fig12.show()
+#fig12.show()
 
-"""## Wordcloud"""
-
-url = 'https://raw.githubusercontent.com/Fmarcelneves/Twitter_Network_Analytics/main/stopwords.txt'
+#url = 'https://raw.githubusercontent.com/Fmarcelneves/Twitter_Network_Analytics/main/stopwords.txt'
 
 stopwords= set(STOPWORDS)
 #Adicionando a lista stopwords em português
@@ -195,7 +193,7 @@ with open('stopwords.txt', 'r') as f:
 
 new_stopwords = stopwords.union(new_words + ["#eleicoes2020"])
 
-"""
+#"""
 #Adicionando a lista stopwords em português"""
 
 import io
@@ -203,16 +201,6 @@ import base64
 
 Hashtag_Combined = " ".join(twitter_dt['Hashtags'].dropna())
 text = Hashtag_Combined.replace("eleicoes2020", "").replace("eleicoe", "").replace("election2020", "elections2020").replace("smunicipais", "eleicoesmunicipais").replace("samaericanas2020", "eleicoesamericanas2020").replace("snoseua", "eleicoesnoseua").replace("seua", "eleicoeseua")
-
-text
-
-#Word Cloud
-fig14 = WordCloud(background_color="black", stopwords=STOPWORDS, width=1800, height=1500, collocations=False)
-text = Hashtag_Combined.replace("eleicoes2020", "").replace("eleicoe", "").replace("election2020", "elections2020").replace("smunicipais", "eleicoesmunicipais").replace("samaericanas2020", "eleicoesamericanas2020").replace("snoseua", "eleicoesnoseua").replace("seua", "eleicoeseua")
-fig14.generate(text)
-plt.figure(figsize=(12,12))
-plt.axis("off")
-plt.imshow(fig14, interpolation='bilinear');
 
 teste = str(list(net_all_word['value']))
 
@@ -247,15 +235,14 @@ layout = go.Layout({'xaxis': {'showgrid': False, 'showticklabels': False, 'zerol
                    margin=dict(l=25, r=25, t=25, b=25), title="Wordcloud das Hashtags presentes nos tweets")
 
 fig13 = go.Figure(data=[data], layout=layout)
-fig13.show()
+#fig13.show()
 
 hash_freq = net_all_word[~net_all_word.value.str.contains("#eleicoes2020")]
 fig14=hash_freq['value'].value_counts().nlargest(15).plot(kind='bar', title="Frequência das Hashtags presentes nos tweets", labels={"_value": "Frequências", "index": "Hashtags", 'color': 'Frequência'}, color = hash_freq['value'].value_counts().nlargest(15))
-fig14.update_layout(showlegend=False)
+#fig14.update_layout(showlegend=False)
 
 
-
-"""## Noise Removal Remove urls from text (http(s), www)
+## Noise Removal Remove urls from text (http(s), www)
 
 """
 
@@ -366,7 +353,7 @@ sa_twitter_dt_tokens = _tokenize_text(sa_twitter_dt)
 for i in range(0, 5):
     print(sa_twitter_dt_tokens [i])
 
-"""### Object Standardization"""
+### Object Standardization"""
 
 def _apply_standardization(tokens, std_list):
     ls = []
@@ -446,7 +433,7 @@ sa_twitter_dt_tokens = _remove_stopwords(sa_twitter_dt_tokens, stopword_list)
 for i in range(0, 5):
     print(sa_twitter_dt_tokens[i])
 
-"""### Stemming (dimensionality reduction)"""
+### Stemming (dimensionality reduction)"""
 
 def _apply_stemmer(tokens):
     ls = []
@@ -490,7 +477,7 @@ sa_twitter_dt = _untokenize_text(sa_twitter_dt_tokens)
 for i in range(0, 5):
     print(sa_twitter_dt[i])
 
-"""### Incorporar o modelo de análise de sentimentos """
+### Incorporar o modelo de análise de sentimentos """
 
 model = "https://github.com/Fmarcelneves/Twitter_Network_Analytics/blob/main/LR_model_we"
 
@@ -504,7 +491,7 @@ twitter_dt['Sentimento_tweet'] = Sentimento_tweet
 
 twitter_dt.head()
 
-"""### Análise de sentimentos """
+### Análise de sentimentos """
 
 twitter_dt['Sentimento_tweet'].describe()
 
@@ -635,7 +622,7 @@ fig18 = go.Figure(data=data, layout=go.Layout(yaxis2=y2))
 fig18.update_layout(title="Frequências dos tweets positivos e negativos ao longo do tempo", xaxis_title="Tempo", yaxis_title="Frequências(%)")
 iplot(fig18)
 
-"""## Redes"""
+## Redes"""
 
 net_rt = pd.concat([net_rtc, net2.reindex(net_rtc.index)], axis=1)
 net_rt = net_rt.melt(id_vars=['Nome_do_usuário', 'Retweets'])
