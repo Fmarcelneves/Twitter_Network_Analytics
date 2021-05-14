@@ -8,6 +8,7 @@ Uma prévia do projeto foi apresentado no canal EstaTiDados, do mestre Thiago Ma
 https://www.youtube.com/watch?v=jAl-GvLnAiw&t=1s
 
 **Técnicas utilizadas**
+<b>
 Na primeira parte do projeto, apresento o framework do trabalho, métodos de coleta de dados utilizados (através da API do Twitter), preparação e limpeza dos dados, uma análise exploratória de dados extensa, análise de sentimentos (machine learning) e análise de redes (três métricas de centralidade e uma de comunidade, para a interpretação de três tipos de redes).
 
 <img src="https://miro.medium.com/max/1163/1*sr5O0iNHzajHfn4DgTXL1w.gif" width="640" height="480">
