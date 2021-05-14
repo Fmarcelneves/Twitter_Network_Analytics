@@ -7,6 +7,7 @@ https://www.youtube.com/watch?v=jAl-GvLnAiw&t=1s
 Nesta primeira parte do artigo, apresento o framework do trabalho, métodos de coleta de dados utilizados, preparação dos dados, uma análise exploratória de dados global, análise de sentimentos (machine learning) e análise de redes (três métricas de centralidade e uma de comunidade, para a interpretação de três tipos de redes).
 
 Exemplo de rede do projeto - Rede de Retweets 
+
 <img src="https://miro.medium.com/max/1163/1*sr5O0iNHzajHfn4DgTXL1w.gif" width="640" height="480">
 
 
@@ -22,7 +23,8 @@ https://www.youtube.com/watch?v=jAl-GvLnAiw&t=1s
 In this first part of the article, the presentation of a framework, data collection methods, data preparation and wrangling, a exploratory data analysis, sentiment analysis (machine learning) and network analysis (three metrics of centrality of the community) were made.
 
 Example of a network from the project - Retweet Network
-![](https://miro.medium.com/max/1163/1*sr5O0iNHzajHfn4DgTXL1w.gif)
+
+<img src="https://miro.medium.com/max/1163/1*sr5O0iNHzajHfn4DgTXL1w.gif" width="640" height="480">
 
 
 This particular project focuses on the theme of the brazilian elections of 2020, where I extracted about 122 thousand tweets during the last month of elections. Its objective is to reveal which users / sub-themes / hashtags have the power to influence and spread information in the network, and in the future I will try to link these results with sentiment analysis. In other articles about or project, I will try to answer more specific questions and use complementary analyzes.
