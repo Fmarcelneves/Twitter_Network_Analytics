@@ -12,7 +12,6 @@ Nesta primeira parte do artigo, apresento o framework do trabalho, métodos de c
 <img src="https://miro.medium.com/max/1163/1*sr5O0iNHzajHfn4DgTXL1w.gif" width="640" height="480">
 Exemplo de rede do projeto - Rede de Retweets 
 
-
 Este projeto em particular foca na temática das eleições 2020, onde extraí cerca de 122 mil tweets durante o último mês das eleições. Seu objetivo é revelar quais são os usuários/sub-temas/hashtags com poder de influência e propagação de informações na rede, e no futuro vincular tais resultados com a análise de sentimentos. Em outros artigos sobre o projeto, irei procurar responder perguntas mais específicas e utilizar análises complementares.
 
 
