@@ -8,16 +8,15 @@ https://felipe-marcel-neves.medium.com/twitter-network-analytics-fcb01272e2fd
 Uma prévia do projeto foi apresentado no canal EstaTiDados, do mestre Thiago Marques (Pregador de Gauss, Fisher, Bernoulli...):
 https://www.youtube.com/watch?v=jAl-GvLnAiw&t=1s
 
+Este projeto em particular foca na temática das eleições 2020, onde extraí cerca de 122 mil tweets durante o último mês das eleições. Seu objetivo é revelar quais são os usuários/sub-temas/hashtags com poder de influência e propagação de informações na rede, e no futuro vincular tais resultados com a análise de sentimentos. Em outros artigos sobre o projeto, irei procurar responder perguntas mais específicas e utilizar análises complementares.
+
 **Técnicas utilizadas** 
 <br /> 
 Na primeira parte do projeto, apresento o framework do trabalho, métodos de coleta de dados utilizados (através da API do Twitter), preparação e limpeza dos dados, uma análise exploratória de dados extensa, análise de sentimentos (machine learning) e análise de redes (três métricas de centralidade e uma de comunidade, para a interpretação de três tipos de redes).
 
 <img src="https://miro.medium.com/max/1163/1*sr5O0iNHzajHfn4DgTXL1w.gif" width="640" height="480">
-
+<br />
 Exemplo de rede do projeto - Rede de Retweets 
-
-Este projeto em particular foca na temática das eleições 2020, onde extraí cerca de 122 mil tweets durante o último mês das eleições. Seu objetivo é revelar quais são os usuários/sub-temas/hashtags com poder de influência e propagação de informações na rede, e no futuro vincular tais resultados com a análise de sentimentos. Em outros artigos sobre o projeto, irei procurar responder perguntas mais específicas e utilizar análises complementares.
-
 
 # Twitter_Network_Analytics - EN
 ### A framework for data analysis of social networks using analysis and measurements of complex networks, as well as sentiment analysis. 
