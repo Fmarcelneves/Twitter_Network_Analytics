@@ -7,7 +7,7 @@ https://felipe-marcel-neves.medium.com/twitter-network-analytics-fcb01272e2fd
 Uma prévia do projeto foi apresentado no canal EstaTiDados, do mestre Thiago Marques (Pregador de Gauss, Fisher, Bernoulli...):
 https://www.youtube.com/watch?v=jAl-GvLnAiw&t=1s
 
-Nesta primeira parte do artigo, apresento o framework do trabalho, métodos de coleta de dados utilizados, preparação dos dados, uma análise exploratória de dados global, análise de sentimentos (machine learning) e análise de redes (três métricas de centralidade e uma de comunidade, para a interpretação de três tipos de redes).
+Nesta primeira parte do artigo, apresento o framework do trabalho, métodos de coleta de dados utilizados, preparação dos dados, uma análise exploratória de dados extensa, análise de sentimentos (machine learning) e análise de redes (três métricas de centralidade e uma de comunidade, para a interpretação de três tipos de redes).
 
 <img src="https://miro.medium.com/max/1163/1*sr5O0iNHzajHfn4DgTXL1w.gif" width="640" height="480">
 
@@ -25,7 +25,7 @@ https://felipe-marcel-neves.medium.com/twitter-network-analytics-fcb01272e2fd (o
 A previous version of the project was presented in the youtube channel EstaTiDados from Thiago Marques (Pregador de Gauss, Fisher, Bernoulli ...):
 https://www.youtube.com/watch?v=jAl-GvLnAiw&t=1s
 
-In this first part of the article, the presentation of a framework, data collection methods, data preparation and wrangling, a exploratory data analysis, sentiment analysis (machine learning) and network analysis (three metrics of centrality of the community) were made.
+In this first part of the article, the presentation of a framework, data collection methods, data preparation and wrangling, a deep exploratory data analysis, sentiment analysis (machine learning) and network analysis (three metrics of centrality of the community) were made.
 
 <img src="https://miro.medium.com/max/1163/1*sr5O0iNHzajHfn4DgTXL1w.gif" width="640" height="480">
 
