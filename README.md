@@ -1,7 +1,8 @@
 # Twitter_Network_Analytics - PT
 ### Um framework para análise de dados de redes sociais usando análises e medidas de redes complexas, além de análise de sentimentos.
 
-O projeto (parte 1, de 3) está descrito em detalhes no Medium:
+O projeto (parte 1, de 3) está descrito em detalhes no Medium: 
+<br /> 
 https://felipe-marcel-neves.medium.com/twitter-network-analytics-fcb01272e2fd
 
 Uma prévia do projeto foi apresentado no canal EstaTiDados, do mestre Thiago Marques (Pregador de Gauss, Fisher, Bernoulli...):
@@ -22,6 +23,7 @@ Este projeto em particular foca na temática das eleições 2020, onde extraí c
 ### A framework for data analysis of social networks using analysis and measurements of complex networks, as well as sentiment analysis. 
 
 The project (part 1, of 3) is described in details no Medium:
+<br /> 
 https://felipe-marcel-neves.medium.com/twitter-network-analytics-fcb01272e2fd (only in portuguese for now)
 
 A previous version of the project was presented in the youtube channel EstaTiDados from Thiago Marques (Pregador de Gauss, Fisher, Bernoulli ...):
