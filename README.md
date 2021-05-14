@@ -12,17 +12,14 @@ Este projeto em particular foca na temática das eleições 2020, onde extraí c
 Na primeira parte do projeto, apresento o framework do trabalho, métodos de coleta de dados utilizados (através da API do Twitter), preparação e limpeza dos dados, uma análise exploratória de dados extensa, análise de sentimentos (machine learning) e análise de redes (três métricas de centralidade e uma de comunidade, para a interpretação de três tipos de redes).
 
 <img src="https://miro.medium.com/max/1163/1*sr5O0iNHzajHfn4DgTXL1w.gif" width="640" height="480">
-<br /> Exemplo de rede do projeto - Rede de Retweets 
+Exemplo de rede do projeto - Rede de Retweets 
 
 # Twitter_Network_Analytics - EN
 ### A framework for data analysis of social networks using analysis and measurements of complex networks, as well as sentiment analysis. 
 
-The project (part 1, of 3) is described in details no Medium:
-<br /> 
-https://felipe-marcel-neves.medium.com/twitter-network-analytics-fcb01272e2fd (only in portuguese for now)
+The project (part 1, of 3) is described in details no [Medium](https://felipe-marcel-neves.medium.com/twitter-network-analytics-fcb01272e2fd) (only in portuguese for now)
 
-A previous version of the project was presented in the youtube channel EstaTiDados from Thiago Marques (Pregador de Gauss, Fisher, Bernoulli ...):
-https://www.youtube.com/watch?v=jAl-GvLnAiw&t=1s
+A previous version of the project was presented in the youtube channel [EstaTiDados](https://www.youtube.com/watch?v=jAl-GvLnAiw&t=1s) from Thiago Marques (Pregador de Gauss, Fisher, Bernoulli ...)
 
 This particular project focuses on the theme of the brazilian elections of 2020, where I extracted about 122 thousand tweets during the last month of elections. Its objective is to reveal which users / sub-themes / hashtags have the power to influence and spread information in the network, and in the future I will try to link these results with sentiment analysis. In other articles about or project, I will try to answer more specific questions and use complementary analyzes.
 
@@ -30,5 +27,5 @@ This particular project focuses on the theme of the brazilian elections of 2020,
 In this first part of the article, the presentation of a framework, data collection methods, data preparation and wrangling, a deep exploratory data analysis, sentiment analysis (machine learning) and network analysis (three metrics of centrality of the community) were made.
 
 <img src="https://miro.medium.com/max/1163/1*sr5O0iNHzajHfn4DgTXL1w.gif" width="640" height="480">
-<br /> Example of a network from the project - Retweet Network
+Example of a network from the project - Retweet Network
 
