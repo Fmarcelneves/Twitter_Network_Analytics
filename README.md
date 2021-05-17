@@ -11,9 +11,9 @@ Este projeto em particular foca na temática das eleições 2020, onde extraí c
 <br /> 
 Na primeira parte do projeto, apresento o framework do trabalho, métodos de coleta de dados utilizados (através da API do Twitter), preparação e limpeza dos dados, uma análise exploratória de dados extensa, análise de sentimentos (machine learning) e análise de redes (três métricas de centralidade e uma de comunidade, para a interpretação de três tipos de redes).
 
-<img src="https://miro.medium.com/max/1163/1*sr5O0iNHzajHfn4DgTXL1w.gif" width="640" height="480"><br/>
-Exemplo de rede do projeto - Rede de Retweets <br/>
-
+<img src="https://miro.medium.com/max/1163/1*sr5O0iNHzajHfn4DgTXL1w.gif" width="640" height="480">
+Exemplo de rede do projeto - Rede de Retweets 
+<br />
 Esse projeto possui os seguintes arquivos: 
 - Twitter_data_collection.ipynb = Notebook sobre a extração dos dados
 - Twitter_Preparação_dos dados_data_wrangling.ipynb = Notebook da preparação dos dados coletados
@@ -39,4 +39,15 @@ In this first part of the article, the presentation of a framework, data collect
 
 <img src="https://miro.medium.com/max/1163/1*sr5O0iNHzajHfn4DgTXL1w.gif" width="640" height="480">
 Example of a network from the project - Retweet Network
+<br />
+
+This project has the following files:
+- Twitter_data_collection.ipynb = Notebook of data extraction
+- Twitter_Preparação_dos dados_data_wrangling.ipynb = Notebook of data wrangling
+- TweetsNeutralHash.csv, TweetsNeutralNews.csv, TweetsWithTheme.csv, NoThemeTweets.csv = csv files used to compose the model for the sentimental analysis
+- stopwords.txt =  stopwords used in the model 
+- Machine_learning_model_political_theme.ipynb = Notebook with the construction of the logistic regression model used for the sentimental analysis 
+- Pipeline LR = pickle file with the model generated in the previous notebook
+- twitter_data_eleicoes-2020.csv = csv file with the data collected from twitter pre-prepared in a single file / data used in the analyses 
+- Twitter_analysis_(exploratory,_sentimental_and_networks).ipynb = Notebook file analysis 
 
