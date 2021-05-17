@@ -40,6 +40,7 @@ This particular project focuses on the theme of the brazilian elections of 2020,
 In this first part of the article, the presentation of a framework, data collection methods, data preparation and wrangling, a deep exploratory data analysis, sentiment analysis (machine learning) and network analysis (three metrics of centrality of the community) were made.
 
 <img src="https://miro.medium.com/max/1163/1*sr5O0iNHzajHfn4DgTXL1w.gif" width="640" height="480">
+
 Example of a network from the project - Retweet Network
 <br />
 
