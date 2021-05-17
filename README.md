@@ -13,9 +13,8 @@ Na primeira parte do projeto, apresento o framework do trabalho, métodos de col
 
 <img src="https://miro.medium.com/max/1163/1*sr5O0iNHzajHfn4DgTXL1w.gif" width="640" height="480">
 Exemplo de rede do projeto - Rede de Retweets 
-
-Esse projeto possui os seguintes arquivos: 
 <br />
+Esse projeto possui os seguintes arquivos: 
 - Twitter_data_collection.ipynb = Notebook sobre a extração dos dados
 - Twitter_Preparação_dos dados_data_wrangling.ipynb = Notebook da preparação dos dados coletados
 - TweetsNeutralHash.csv, TweetsNeutralNews.csv, TweetsWithTheme.csv, NoThemeTweets.csv =  arquivos csv usados para compor o modelo para a análise de sentimentos
