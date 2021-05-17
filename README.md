@@ -12,7 +12,7 @@ Este projeto em particular foca na temática das eleições 2020, onde extraí c
 Na primeira parte do projeto, apresento o framework do trabalho, métodos de coleta de dados utilizados (através da API do Twitter), preparação e limpeza dos dados, uma análise exploratória de dados extensa, análise de sentimentos (machine learning) e análise de redes (três métricas de centralidade e uma de comunidade, para a interpretação de três tipos de redes).
 
 <img src="https://miro.medium.com/max/1163/1*sr5O0iNHzajHfn4DgTXL1w.gif" width="640" height="480"> 
-<br />
+<br>
 Exemplo de rede do projeto - Rede de Retweets 
 <br />
 
