@@ -14,6 +14,17 @@ Na primeira parte do projeto, apresento o framework do trabalho, métodos de col
 <img src="https://miro.medium.com/max/1163/1*sr5O0iNHzajHfn4DgTXL1w.gif" width="640" height="480">
 Exemplo de rede do projeto - Rede de Retweets 
 
+Esse projeto possui os seguintes arquivos: 
+<br />
+- Twitter_data_collection.ipynb = Notebook sobre a extração dos dados
+- Twitter_Preparação_dos dados_data_wrangling.ipynb = Notebook da preparação dos dados coletados
+- TweetsNeutralHash.csv, TweetsNeutralNews.csv, TweetsWithTheme.csv, NoThemeTweets.csv =  arquivos csv usados para compor o modelo para a análise de sentimentos
+- stopwords.txt =  stopwords usados no modelo e nos dados
+- Machine_learning_model_political_theme.ipynb = Notebook com a construção do modelo de regressão logística usado para a análise de sentimentos
+- Pipeline LR = arquivo pickle com o modelo gerado no notebook anterior
+- twitter_data_eleicoes-2020.csv = arquivo csv com os dados coletados do twitter pré-preparados em um único arquivo/dados usados nas análises
+- Twitter_analysis_(exploratory,_sentimental_and_networks).ipynb = Notebook das análises do arquivo  
+
 # Twitter_Network_Analytics - EN
 ### A framework for data analysis of social networks using analysis and measurements of complex networks, as well as sentiment analysis. 
 
